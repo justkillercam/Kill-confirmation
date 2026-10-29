@@ -1,0 +1,19 @@
+# Leave blank for the default prefix: "<gray>[<red>K<orange>C<gray>]"
+prefix: ""
+
+# gui    = normal chest GUI (plugins/KillConfirmation/GUI/gui.yml)
+# dialog = Minecraft Dialogs (plugins/KillConfirmation/GUI/dialog.yml)
+#          Paper/Purpur 1.21.7+ only, falls back to gui on other servers
+type: gui
+
+# Ask for confirmation when using /kill <player>
+confirm-other: true
+
+# Reload everything in game with /kc reload (permission: kc.reload)
+messages:
+  no-permission: "<red>You don't have permission."
+  player-not-found: "<red>Player <white>{target}<red> not found."
+  console-usage: "<red>Usage: /kill <player>"
+  killed: "<gray>Killed <white>{target}<gray>."
+  cancelled: "<gray>Cancelled."
+  reloaded: "<green>Configs reloaded."

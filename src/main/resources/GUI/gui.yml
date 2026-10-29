@@ -1,0 +1,25 @@
+# Placeholders: {target} {player}
+# Colors: <red> <green> <gold> <orange> <#RRGGBB> <bold> <reset> or &c style codes
+title: "<red>Kill Confirmation"
+rows: 3   # 1-6
+
+# Every slot not listed under "slots" uses this item
+filler:
+  material: BLACK_STAINED_GLASS_PANE
+  name: " "
+
+# Slots are numbered from 0 (top-left). Any slot can be overridden.
+# action: YES | CANCEL | NONE
+slots:
+  11:
+    material: LIME_STAINED_GLASS_PANE
+    name: "<green><bold>YES"
+    lore:
+      - "<gray>Kill <white>{target}"
+    action: YES
+  15:
+    material: RED_STAINED_GLASS_PANE
+    name: "<red><bold>CANCEL"
+    lore:
+      - "<gray>Do nothing"
+    action: CANCEL

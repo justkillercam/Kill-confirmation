@@ -1,0 +1,14 @@
+# Used when config.yml has: type: dialog
+# Placeholders: {target}
+# Dialog buttons can't hold item icons, so put a symbol in the label instead.
+title: "<red>Kill Confirmation"
+can-close-with-escape: true
+button-width: 150
+body:
+  - "<gray>Are you sure you want to kill <white>{target}<gray>?"
+yes:
+  label: "<green>✔ Yes"
+  tooltip: "<gray>Confirm"
+no:
+  label: "<red>✘ Cancel"
+  tooltip: "<gray>Cancel"

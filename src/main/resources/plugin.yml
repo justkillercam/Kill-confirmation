@@ -1,0 +1,32 @@
+name: KillConfirmation
+version: ${project.version}
+main: fun.tcsmp.killconfirmation.KillConfirmation
+api-version: '1.21'
+folia-supported: true
+authors: [justkillercam]
+description: Confirmation menu before /kill
+
+commands:
+  kill:
+    description: Kill yourself or another player (with confirmation)
+    usage: /kill [player]
+  kc:
+    description: Kill confirmation (/kc reload reloads the configs)
+    usage: /kc [player|reload]
+  die:
+    description: Kill confirmation
+    usage: /die [player]
+  killconf:
+    description: Kill confirmation
+    usage: /killconf [player|reload]
+
+permissions:
+  kc.self:
+    description: Kill yourself
+    default: true
+  kc.other:
+    description: Kill other players
+    default: op
+  kc.reload:
+    description: Reload the KillConfirmation configs
+    default: op
